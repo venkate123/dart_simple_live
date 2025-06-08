@@ -584,7 +584,7 @@ class LiveRoomController extends PlayerController with WidgetsBindingObserver {
       SmartDialog.showToast("无法读取播放地址");
       return;
     }
-    Utils.copyToClipboard(playUrl.urls[currentLineIndex]);
+    Utils.copyToClipboard(playUrl.urls.join('\n'));
     SmartDialog.showToast("已复制播放直链");
   }
 
