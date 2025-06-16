@@ -580,7 +580,7 @@ class LiveRoomController extends PlayerController with WidgetsBindingObserver {
     return playUrls[currentLineIndex];
   }
 
-  void copyPlayUrl() {
+  void copyPlayUrl() async {
     if (playurl == null) {
       return;
     }
