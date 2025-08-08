@@ -12,8 +12,8 @@ jobs:
     steps:
       #签出代码 
       - uses: actions/checkout@v4
-        with:
-          ref: master
+        # with:
+        #   ref: master
      
       #设置Flutter
       - name: Flutter action
